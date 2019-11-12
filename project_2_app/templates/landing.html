@@ -3,7 +3,7 @@
 
 {% block content %}
 
-    <h1>Welcome to The Event Fairy</h1>
+    <h1 class="animated bounceIn">Welcome to The Event Fairy</h1>
     <p class="app-description">Bring magic to all of your event planning!</p>
 
     <div class="container landing-container">
@@ -20,9 +20,10 @@
         </div>
     </div>
 
-    <div class="cta">
-        <p>Ready to start creating events? Register now to get started!</p>
-        <a href="{% url 'register' %}"><button type="button" class="btn btn-danger">Register</button></a>
-    </div>
-
+    {% if not user.is_authenticated %}
+        <div class="cta">
+            <p>Ready to start creating events? Register now to get started!</p>
+            <a href="{% url 'register' %}"><button type="button" class="btn btn-danger">Register</button></a>
+        </div>
+    {% endif %}
 {% endblock %}

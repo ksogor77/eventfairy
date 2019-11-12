@@ -36,7 +36,7 @@ def register(request):
                     last_name=last_name,
                     )
                     user.save()
-                    return redirect('home')
+                    return redirect('login')
         else:
             context = {'error':'Passwords do not match'}
             return render(request, 'register.html', context)
@@ -116,6 +116,8 @@ def prof_pic_edit(request):
 @login_required
 def contacts_list(request):
     contacts = Contact.objects.filter(user1=request.user)
+    for contact in contacts:
+        print(contact.user2.username)
     context = {'contacts': contacts}
     return render(request, 'contacts_list.html', context)
 
