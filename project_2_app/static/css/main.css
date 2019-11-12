@@ -193,12 +193,32 @@ img {
     } */
 /* } */
 @media screen and (max-width: 768px) {
-    .wrapper {
-      display: flex;
-      flex-direction: column;
+    .home-container-1 {
+        display: table;
     }
-    .wrapper div:first-child {
-      order: 1;
+    .img-1 {
+        display: table-header-group;
+    }
+    .p-1 {
+        display: table-footer-group;
+    }
+    .home-container-2 {
+        display: table
+    }
+    .img-2 {
+        display: table-header-group;
+    }
+    .p-2 {
+        display: table-footer-group;
+    }
+    .home-container-3 {
+        display: table;
+    }
+    .img-3 {
+        display: table-header-group;
+    }
+    .p-3 {
+        display: table-footer-group;
     }
   }
 /*------------------ Profile --------------------*/
