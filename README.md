@@ -33,6 +33,8 @@ We created The Event Fairy for anyone seeking new adventures. With this app, you
 - Python
 - Django
 - Jinja
+- Postgresql
+- DBGLass
 - HTML
 - CSS
 - JavaScript
