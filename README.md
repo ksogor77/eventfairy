@@ -32,9 +32,10 @@ We created The Event Fairy for anyone seeking new adventures. With this app, you
 ## Technologies
 - Python
 - Django
+- Jinja
 - HTML
 - CSS
-- Javascript
+- JavaScript
 - JQuery
 - Bootstrap
 - Animate.css
@@ -45,6 +46,7 @@ We created The Event Fairy for anyone seeking new adventures. With this app, you
 - Add a map view in Event Details
 - Invitation scalability -- implement search bar to search through contacts in order to add them to an event
 - Friends instead of Contacts -- requires one user to send a request and another to accept; makes the relationship mutual
+- Add comments on event details
 
 ## Contributors
 Linh Tran: https://git.generalassemb.ly/ltran  
